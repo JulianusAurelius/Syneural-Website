@@ -1,0 +1,591 @@
+body {
+    background-color: rgb(83, 197, 127);
+    margin: 0;
+}
+#mainbody {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+#mainbodycontent {
+    grid-column: 2/3;
+}
+header {
+    text-align: center;
+}
+#profileEnd {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+/*Sidebar
+***********************
+*/
+#sidebar {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    left: 0px;
+    top: 0px;
+    background-image: url(climbing.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.blackA2 {
+    text-decoration: none;
+    color: white;
+}
+#sidebarbuy {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: rgba(136, 88, 0, 0.5);
+}
+#sidebarinfo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: rgba(136, 88, 0, 0.5);
+}
+#sidebardeals {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: rgba(136, 88, 0, 0.5);
+}
+#sidebarforum {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: rgba(136, 88, 0, 0.5);
+}
+#sidebarprofile {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: rgba(136, 88, 0, 0.5);
+}
+
+
+nav {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 6fr 1fr 1fr; 
+    background-color: rgb(0, 100, 13);
+    background-size: 100%;
+    text-align: center;
+}
+#nav2 {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 6fr 1fr 1fr; 
+    background-color: rgb(0, 100, 13);
+    background-size: 100%;
+    text-align: center;
+}
+
+#buy {
+    grid-row: 1/2;
+}
+#buy:hover {
+    background-color: rgb(0, 48, 6);
+    color: lightgray;
+}
+
+#info {
+    grid-row: 1/2;
+}
+#info:hover {
+    background-color: rgb(0, 48, 6);
+    color: lightgray;
+}
+
+#deals {
+    grid-row: 1/2;
+}
+#deals:hover {
+    background-color: rgb(0, 48, 6);
+    color: lightgray;
+}
+
+#forum {
+    grid-row: 1/2;
+}
+#forum:hover {
+    background-color: rgb(0, 48, 6);
+    color: lightgray;
+}
+
+#profile {
+    grid-row: 1/2;
+    grid-column: 11/12;
+}
+#profile:hover {
+    background-color: rgb(0, 48, 6);
+    color: lightgray;
+}
+
+#cart {
+    grid-row: 1/2;
+    grid-column: 12/13;
+}
+#cart:hover {
+    background-color: rgb(0, 48, 6);
+    color: lightgray;
+}
+
+#holder {
+    grid-row: 2/3;
+    grid-column: 1/13;
+    padding: 0px 0px 0px 0px;
+    border: 5px solid black;
+    line-height: 30px;
+    font-weight: bold;
+}
+#h1 {
+    font-size: 50px;
+}
+
+
+#money{
+    padding-top: 5px;
+}
+.money {
+    font-style: italic;
+    margin: 0px;
+    text-indent: 30px;
+}
+
+
+
+
+/* This part controls the temporary headers from Nav Bar
+*******************************************************
+*******************************************************
+*/
+.black {
+    text-decoration: none;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(0, 133, 18);
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+
+}
+
+/*Buy
+***************/
+#Navbuy1 {
+    grid-column: 1/2;
+}
+#Navbuy2 {
+    grid-column: 2/3;
+}
+#Navbuy3 {
+    grid-column: 3/4;
+}
+#Navbuy4 {
+    grid-column: 4/5;
+}
+#Navbuy5 {
+    grid-column: 5/6;
+}
+/*Info
+***************/
+#Navinfo1 {
+    grid-column: 1/2;
+}
+#Navinfo2 {
+    grid-column: 2/3;
+}
+#Navinfo3 {
+    grid-column: 3/4;
+}
+/*Deals
+***************/
+#Navdeals1 {
+    grid-column: 1/2;
+}
+#Navdeals2 {
+    grid-column: 2/3;
+}
+#Navdeals3 {
+    grid-column: 3/4;
+}
+#Navdeals4 {
+    grid-column: 4/5;
+}
+#Navdeals5 {
+    grid-column: 5/6;
+}
+/*Forum
+***************/
+#Navforum1 {
+    grid-column: 1/2;
+}
+#Navforum2 {
+    grid-column: 2/3;
+}
+#Navforum3 {
+    grid-column: 3/4;
+}
+/*Profile
+***************/
+#Navprofile1 {
+    grid-column: 1/2;
+}
+#Navprofile2 {
+    grid-column: 2/3;
+}
+#Navprofile3 {
+    grid-column: 3/4;
+}
+/*Cart
+***************/
+#Navbuy1 {
+    grid-column: 1/2;
+}
+
+
+
+#holder6 {
+    grid-column: 1/2;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(0, 133, 18);
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+#holder7 {
+    grid-column: 2/3;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(0, 133, 18);
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+#holder8 {
+    grid-column: 3/4;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(0, 133, 18);
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* This portion of code is for the Header
+**********************************************
+**********************************************
+*/
+
+
+
+
+
+/* This portion of code is for the BUY division 
+**********************************************
+**********************************************
+*/
+.blackA {
+    text-decoration: none;
+    color: black;
+}
+.divp {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#buy-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(0, 172, 37);
+    text-align: center;
+    font-size: 22px;
+}
+#buy1-div {
+    grid-column: 1/3;
+    font-size: 22px;
+    background-color: rgb(0, 207, 45);
+    padding: 30px;
+}
+#buy2-div {
+    grid-column: 2/4;
+    font-size: 22px;
+    background-color: rgb(1, 141, 31);
+    padding: 30px;
+}
+#buy3-div {
+    grid-column: 1/3;
+    font-size: 22px;
+    background-color: rgb(0, 207, 45);
+    padding: 30px;
+}
+#buy4-div {
+    grid-column: 2/4;
+    font-size: 22px;
+    background-color: rgb(1, 141, 31);
+    padding: 30px;
+}
+#buy5-div {
+    grid-column: 1/3;
+    font-size: 22px;
+    background-color: rgb(0, 207, 45);
+    padding: 30px;
+}
+#buyp1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 30px;
+}
+#buyp2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 30px;
+}
+#buyp3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 30px;
+}
+#buyp4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 30px;
+}
+#buyp5 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    padding: 30px;
+}
+/* This portion of code is for the INFO division 
+**********************************************
+**********************************************
+*/
+#info-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(0, 155, 26, 0.425);
+    text-align: center;
+    margin-top: 100px;
+}
+#info1-div {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 22px;
+    background-color: rgb(145, 255, 163);
+    padding: 30px;
+}
+#info2-div {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 22px;
+    background-color: rgb(71, 255, 101);
+    padding: 30px;
+}
+#info3-div {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    font-size: 22px;
+    background-color: rgb(145, 255, 163);
+    padding: 30px;
+}
+#infop1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 30px;
+}
+#infop2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 30px;
+}
+#infop3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 30px;
+}
+/* This portion of code is for the DEALS division 
+**********************************************
+**********************************************
+*/
+#deals-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(0, 172, 37);
+    text-align: center;
+    font-size: 22px;
+    margin-top: 100px;
+}
+#deals1-div {
+    grid-column: 1/3;
+    font-size: 22px;
+    background-color: rgb(0, 207, 45);
+    padding: 30px;
+}
+#deals2-div {
+    grid-column: 2/4;
+    font-size: 22px;
+    background-color: rgb(1, 141, 31);
+    padding: 30px;
+}
+#deals3-div {
+    grid-column: 1/3;
+    font-size: 22px;
+    background-color: rgb(0, 207, 45);
+    padding: 30px;
+}
+#deals4-div {
+    grid-column: 2/4;
+    font-size: 22px;
+    background-color: rgb(1, 141, 31);
+    padding: 30px;
+}
+#dealsp1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 30px;
+}
+#dealsp2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 30px;
+}
+#dealsp3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 30px;
+}
+#dealsp4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 30px;
+}
+/* This portion of code is for the FORUM division 
+**********************************************
+**********************************************
+*/
+#forum-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(0, 155, 26, 0.425);
+    text-align: center;
+    margin-top: 100px;
+}
+#forum1-div {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 22px;
+    background-color: rgb(145, 255, 163);
+    padding: 30px;
+}
+#forum2-div {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 22px;
+    background-color: rgb(71, 255, 101);
+    padding: 30px;
+}
+#forum3-div {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    font-size: 22px;
+    background-color: rgb(145, 255, 163);
+    padding: 30px;
+}
+#forump1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 30px;
+}
+#forump2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 30px;
+}
+#forump3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 30px;
+}
+/* This portion of code is for the PROFILE division 
+**********************************************
+**********************************************
+*/
+#profile-div {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: rgba(101, 126, 107, 0.1);
+    text-align: center;
+    font-size: 22px;
+    margin-top: 100px;
+    background-image: url('sitting.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#profile1-div {
+    grid-column: 1/2;
+    font-size: 22px;
+    background-color: rgba(82, 100, 86, 0.300);
+    text-align: right;
+}
+#profile2-div {
+    grid-column: 1/2;
+    font-size: 22px;
+    background-color: rgba(131, 161, 138, 0.300);
+    text-align: right;
+}
+#profile3-div {
+    grid-column: 1/2;
+    font-size: 22px;
+    background-color: rgba(82, 100, 86, 0.300);
+    text-align: right;
+}
+#profilep1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgba(111, 163, 123, 0.800);
+    font-size: 14px;
+}
+#profilep2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgba(70, 102, 77, 0.800);
+    font-size: 14px;
+}
+#profilep3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: rgba(111, 163, 123, 0.800);
+    font-size: 14px;
+}
+.blackA1 {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+#quote {
+    font-style: italic;
+    margin-bottom: 0px;
+    text-align: right;
+    padding-right: 40px;
+}
+#author {
+    text-align: right;
+    padding-right: 20px;
+}
+#span1 {
+    font-size: 50px;
+    color: rgb(0, 13, 133);
+}
