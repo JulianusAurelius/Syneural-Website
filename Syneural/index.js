@@ -249,16 +249,22 @@ function cart(){
 
 
 
+// Get the navbar
+var navbarsticky = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbarsticky.offsetTop;
+document.getElementById('span1').innerHTML=sticky;
+
+// 
 //window.addEventListener('scroll', function() {
-    if (window.pageYOffset == 175) {
-        sidebarBuy = document.getElementById('sidebarbuy');
-        sidebarInfo = document.getElementById('sidebarinfo');
-        sidebarDeals = document.getElementById('sidebardeals');
-        sidebarForum = document.getElementById('sidebarforum');
-        sidebarProfile = document.getElementById('sidebarprofile');
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    }
+    else if (window.pageYOffset < sticky) {
+        navbar.classList.remove("sticky");
     }
 //  });
-document.body.style.backgroundColor="red";
 
 
 window.onscroll = function() {myFunction()};
