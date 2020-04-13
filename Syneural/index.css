@@ -11,9 +11,9 @@ body {
 }
 #mainbodycontent {
     grid-column: 2/3;
-    /*background-image: url(lake1.jpg);
+    /*background-image: url(star.jpg);
     background-position: right;
-    background-size: 200% 100%;
+    background-size: 300% 100%;
     background-repeat: no-repeat;
     color: white;*/
 }
@@ -46,7 +46,7 @@ header {
     text-decoration: none;
     color: white;
 }
-#sideba {
+#sidebarbuy {
     margin-top: 80px;
     margin-bottom: 80px;
     border: 1px solid black;

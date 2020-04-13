@@ -1,3 +1,19 @@
+function scroll() {
+    // Get the navbar
+    var navbarsticky = document.getElementById("navbar");
+    // Get the offset position of the navbar
+    var sticky = navbarsticky.offsetTop;
+    document.getElementById('span1').innerHTML=sticky;
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        this.alert('hi');
+    }
+    else if (window.pageYOffset < sticky) {
+        navbar.classList.remove("sticky");
+    }
+}
+
+
 //The following displays each option's extended info from the nav bar
 var buybool = false;
 var infobool = false;
@@ -5,21 +21,48 @@ var dealsbool = false;
 var forumbool = false;
 var profilebool = false;
 var cartbool = false;
-var buyboolPer = false;
-var infoboolPer = false;
-var dealsboolPer = false;
-var forumboolPer = false;
-var profileboolPer = false;
-var cartboolPer = false;
 
 function buy() {
     buybool = true;
-    buyboolPer = true;
+    var original = document.getElementById('h1');
+    if (infobool == true) {
+        if1 = document.getElementById('Navinfo1').delete();
+        if2 = document.getElementById('Navinfo2').delete();
+        if3 = document.getElementById('Navinfo3').delete();
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        infobool = false;
+    }
+    else if (dealsbool == true) {
+        document.getElementById('Navdeals1').delete();
+        document.getElementById('Navdeals2').delete();
+        document.getElementById('Navdeals3').delete();
+        document.getElementById('Navdeals4').delete();
+        dealsbool = false;
+    }
+    else if (forumbool == true) {
+        document.getElementById('Navforum1').delete();
+        document.getElementById('Navforum2').delete();
+        document.getElementById('Navforum3').delete();
+        forumbool = false;
+    }
+    else if (profilebool == true) {
+        document.getElementById('Navprofile1').delete();
+        document.getElementById('Navprofile2').delete();
+        document.getElementById('Navprofile3').delete();
+        profilebool = false;
+    }
+    else if (cartbool == true) {
+        document.getElementById('Navcart1').delete();
+        cartbool = false;
+    }
+    else {
+        //delete h1
+        original.parentNode.removeChild(original);
+    }
     //exit('buy');
     var holder = document.getElementById('holder');
-    //delete h1
-    var original = document.getElementById('h1');
-    original.parentNode.removeChild(original);
     //display:grid
     document.getElementById('holder').style.display='grid';
     //gridtemplate: 5fr
@@ -61,26 +104,9 @@ function buy() {
     child5.appendChild(childText5);
     holder.appendChild(child5);
 }
-function buyExit() {
-    if (infobool == true) {
-        document.getElementById('Navinfo1').delete();
-        document.getElementById('Navinfo2').delete();
-        document.getElementById('Navinfo3').delete();
-    }
-    document.getElementById('Navdeals1').delete();
-    document.getElementById('Navdeals2').delete();
-    document.getElementById('Navdeals3').delete();
-    document.getElementById('Navdeals4').delete();
-    document.getElementById('Navforum1').delete();
-    document.getElementById('Navforum2').delete();
-    document.getElementById('Navforum3').delete();
-    document.getElementById('Navprofile1').delete();
-    document.getElementById('Navprofile2').delete();
-    document.getElementById('Navprofile3').delete();
-    document.getElementById('Navcart1').delete();
-}
-
+ 
 function info(){
+    infobool = true;
     var holder = document.getElementById('holder');
     //delete h1
     var original = document.getElementById('h1');
@@ -246,31 +272,3 @@ function cart(){
 //    //remove display:grid
 //}
 
-
-
-
-// Get the navbar
-var navbarsticky = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbarsticky.offsetTop;
-document.getElementById('span1').innerHTML=sticky;
-
-// 
-//window.addEventListener('scroll', function() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-    }
-    else if (window.pageYOffset < sticky) {
-        navbar.classList.remove("sticky");
-    }
-//  });
-
-
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (document.body.scrollTop > 50) {
-    document.alert('works');
-    }
-}
