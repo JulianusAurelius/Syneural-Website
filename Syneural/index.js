@@ -32,49 +32,60 @@ var cartbool = false;
 
 function buy() {
     buybool = true;
-    var original = document.getElementById('h1');
     if (infobool == true) {
-        if1 = document.getElementById('Navinfo1').delete();
-        if2 = document.getElementById('Navinfo2').delete();
-        if3 = document.getElementById('Navinfo3').delete();
+        if1 = document.getElementById('Navinfo1');
+        if2 = document.getElementById('Navinfo2');
+        if3 = document.getElementById('Navinfo3');
         if1.parentNode.removeChild(if1);
         if2.parentNode.removeChild(if2);
         if3.parentNode.removeChild(if3);
         infobool = false;
     }
     else if (dealsbool == true) {
-        document.getElementById('Navdeals1').delete();
-        document.getElementById('Navdeals2').delete();
-        document.getElementById('Navdeals3').delete();
-        document.getElementById('Navdeals4').delete();
+        if1 = document.getElementById('Navdeals1');
+        if2 = document.getElementById('Navdeals2');
+        if3 = document.getElementById('Navdeals3');
+        if4= document.getElementById('Navdeals4');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        if4.parentNode.removeChild(if4);
         dealsbool = false;
     }
     else if (forumbool == true) {
-        document.getElementById('Navforum1').delete();
-        document.getElementById('Navforum2').delete();
-        document.getElementById('Navforum3').delete();
+        if1 = document.getElementById('Navforum1');
+        if2 = document.getElementById('Navforum2');
+        if3 = document.getElementById('Navforum3');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
         forumbool = false;
     }
     else if (profilebool == true) {
-        document.getElementById('Navprofile1').delete();
-        document.getElementById('Navprofile2').delete();
-        document.getElementById('Navprofile3').delete();
+        if1 = document.getElementById('Navprofile1');
+        if2 = document.getElementById('Navprofile2');
+        if3 = document.getElementById('Navprofile3');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
         profilebool = false;
     }
     else if (cartbool == true) {
-        document.getElementById('Navcart1').delete();
+        if1= document.getElementById('Navcart1');
+        if1.parentNode.removeChild(if1);
         cartbool = false;
     }
     else {
+        var original = document.getElementById('h1');
         //delete h1
         original.parentNode.removeChild(original);
     }
     //exit('buy');
     var holder = document.getElementById('holder');
     //display:grid
-    document.getElementById('holder').style.display='grid';
+    holder.style.display='grid';
     //gridtemplate: 5fr
-    document.getElementById('holder').style.displayTemplate='1fr 1fr 1fr 1fr 1fr';
+    holder.style.displayTemplate='1fr 1fr 1fr 1fr 1fr';
     //create 5 children, give them text, id's, and links, and place them at the right places
     var child1 = document.createElement('a');
     var childText1 = document.createTextNode('Buy Mixing Powder!');
@@ -115,14 +126,63 @@ function buy() {
  
 function info(){
     infobool = true;
+    if (buybool == true) {
+        if1 = document.getElementById('Navbuy1');
+        if2 = document.getElementById('Navbuy2');
+        if3 = document.getElementById('Navbuy3');
+        if4 = document.getElementById('Navbuy4');
+        if5 = document.getElementById('Navbuy5');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        if4.parentNode.removeChild(if4);
+        if5.parentNode.removeChild(if5);
+        buybool = false;
+    }
+    else if (dealsbool == true) {
+        if1 = document.getElementById('Navdeals1');
+        if2 = document.getElementById('Navdeals2');
+        if3 = document.getElementById('Navdeals3');
+        if4 = document.getElementById('Navdeals4');
+        if1.parentNode.removeChild(if1);
+        if1.parentNode.removeChild(if2);
+        if2.parentNode.removeChild(if3);
+        if3.parentNode.removeChild(if4);
+        dealsbool = false;
+    }
+    else if (forumbool == true) {
+        document.getElementById('Navforum1');
+        document.getElementById('Navforum2');
+        document.getElementById('Navforum3');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        forumbool = false;
+    }
+    else if (profilebool == true) {
+        if1 = document.getElementById('Navprofile1');
+        if2 = document.getElementById('Navprofile2');
+        if3 = document.getElementById('Navprofile3');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        profilebool = false;
+    }
+    else if (cartbool == true) {
+        if1= document.getElementById('Navcart1');
+        if1.parentNode.removeChild(if1);
+        cartbool = false;
+    }
+    else {
+        var original = document.getElementById('h1');
+        //delete h1
+        original.parentNode.removeChild(original);
+    }
     var holder = document.getElementById('holder');
-    //delete h1
-    var original = document.getElementById('h1');
-    original.parentNode.removeChild(original);
     //display:grid
-    document.getElementById('holder').style.display='grid';
+    holdrer.style.display='grid';
     //gridtemplate: 5fr
-    document.getElementById('holder').style.displayTemplate='1fr 1fr 1fr';
+    holder.style.displayTemplate='1fr 1fr 1fr';
     //create 5 children, give them text, id's, and links, and place them at the right places
     var child1 = document.createElement('a');
     var childText1 = document.createTextNode('Learn the Science!');
@@ -150,6 +210,51 @@ function deals(){
     var holder = document.getElementById('holder');
     //delete h1
     var original = document.getElementById('h1');
+    if (buybool == true) {
+        if1 = document.getElementById('Navbuy1');
+        if2 = document.getElementById('Navbuy2');
+        if3 = document.getElementById('Navbuy3');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        buybool = false;
+    }
+    else if (infobool == true) {
+        if1 = document.getElementById('Navinfo1');
+        if2 = document.getElementById('Navinfo2');
+        if3 = document.getElementById('Navinfo3');
+        if1.parentNode.removeChild(if1);
+        if1.parentNode.removeChild(if2);
+        if2.parentNode.removeChild(if3);
+        infobool = false;
+    }
+    else if (forumbool == true) {
+        document.getElementById('Navforum1');
+        document.getElementById('Navforum2');
+        document.getElementById('Navforum3');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        forumbool = false;
+    }
+    else if (profilebool == true) {
+        if1 = document.getElementById('Navprofile1');
+        if2 = document.getElementById('Navprofile2');
+        if3 = document.getElementById('Navprofile3');
+        if1.parentNode.removeChild(if1);
+        if2.parentNode.removeChild(if2);
+        if3.parentNode.removeChild(if3);
+        profilebool = false;
+    }
+    else if (cartbool == true) {
+        if1= document.getElementById('Navcart1');
+        if1.parentNode.removeChild(if1);
+        cartbool = false;
+    }
+    else {
+        //delete h1
+        original.parentNode.removeChild(original);
+    }
     original.parentNode.removeChild(original);
     //display:grid
     document.getElementById('holder').style.display='grid';
