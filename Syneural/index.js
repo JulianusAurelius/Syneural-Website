@@ -1,15 +1,23 @@
 function scroll() {
     // Get the navbar
     var navbarsticky = document.getElementById("navbar");
+    var sidebar = document.getElementById("sidebar");
+    var profilebar = document.getElementById("forum-div");
     // Get the offset position of the navbar
-    var sticky = navbarsticky.offsetTop;
-    document.getElementById('span1').innerHTML=sticky;
+    var sticky = navbarsticky.offsetHeight;
+    //var sticky1 = profilebar.innerHeight + profilebar.scrollY;
     if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-        this.alert('hi');
+        sidebar.classList.add("sticky");
     }
+    ////Trying to make it so that when it scrolls to the bottom that the sidebar stops above the profile ending
+    // Line 23 for profile bar CSS
+    // Line 47 for Stickyend
+    //else if (window.pageYOffset >= sticky1) {
+    //    sidebar.classList.remove("sticky");
+    //    sidebar.classList.add("stickyend");
+    //}
     else if (window.pageYOffset < sticky) {
-        navbar.classList.remove("sticky");
+        sidebar.classList.remove("sticky");
     }
 }
 
