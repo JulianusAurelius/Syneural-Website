@@ -23,3 +23,20 @@
 
 
 
+///FOR exec.js BLEND
+    var form1 = document.getElementById('form1');
+    var form1t = document.getElementById('form1t');
+    var form1 = document.getElementById('form2');
+    var form1t = document.getElementById('form2t');
+    var form1 = document.getElementById('form3');
+    var form1t = document.getElementById('form3t');
+    var form1 = document.getElementById('form4');
+    var form1t = document.getElementById('form4t');
+    form1.parentNode.removeChild(form1);
+    form1t.parentNode.removeChild(form1t);
+    form2.parentNode.removeChild(form2);
+    form2t.parentNode.removeChild(form2t);
+    form3.parentNode.removeChild(form3);
+    form3t.parentNode.removeChild(form3t);
+    form4.parentNode.removeChild(form4);
+    form4t.parentNode.removeChild(form4t);

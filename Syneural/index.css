@@ -35,7 +35,9 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 0ex;
+}
+.stickystart {
+    background-position-y: 0ex !important;
 }
 .sticky {
     position: fixed;
@@ -45,7 +47,7 @@ header {
     background-size: cover !important;
 }
 .stickyend {
-    background-image: url(star.jpg) !important;
+    bottom: 0em !important;
 }
 .blackA2 {
     text-decoration: none;

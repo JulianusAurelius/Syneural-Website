@@ -1,0 +1,56 @@
+body {
+    background-color: darkblue;
+}
+form {
+    background-color: lightblue;
+    margin: auto;
+    margin: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-top: 50px;
+}
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#name {
+    display: inline;
+}
+#namevar {
+    display: inline;
+}
+#job {
+    display: inline;
+}
+#jobvar {
+    display: inline;
+}
+#age {
+    display: inline;
+}
+#agevar {
+    display: inline;
+}
+#gender {
+    display: inline;
+}
+#gendervar {
+    display: inline;
+}
+#gendervar1 {
+    display: inline;
+}
+#blend {
+    display: inline;
+}
+#blendq {
+    display: inline;
+}
+#blendvar {
+    display: inline;
+}
+#blendqvar {
+    display: inline;
+}

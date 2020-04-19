@@ -1,0 +1,39 @@
+body {
+    background-color: darkgray;
+}
+#div {
+    background-color: lightblue;
+    margin: auto;
+    margin: 50px;
+    height: 500px;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: lightgreen;
+}
+#img {
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#div2 {
+    background-color: lightsteelblue;
+    border: 1px solid blue;
+}
+#login {
+    margin: auto;
+    background-color: lightsteelblue;
+    margin: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="profile.css">
+        <script src="profile.js"></script>
+    </head>
+    <body>
+        <button><a href="../index.html">Return to Homepage</a></button>
+        <form id="form">
+            <h1>You are:</h1>
+            <div onclick="blend();" id="firstdiv"><p id="blend">Type of blend: </p><p id="blendvar">First option</p><img class="gear" id="gear1" src="gear.png" height="20px"></div>
+            <div onclick="blendQ();" id="seconddiv"><p id="blendq">Quantity of Blend: </p><p id="blendqvar">3 weeks worth</p><img class="gear" id="gear2" src="gear.png" height="20px"></div>
+            <div onclick="gender('blend');" id="thirddiv"><p id="gender">How often you want to receive it: </p><p id="gendervar">3 weeks</p><img class="gear" id="gear3" src="gear.png" height="20px"></div>
+            <h3 id='fix'>Not Right? Click on any incorrect information to correct it!</h3>
+        </form>
+    </body>
+</html>
