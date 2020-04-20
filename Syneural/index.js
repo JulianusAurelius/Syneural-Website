@@ -269,28 +269,28 @@ function deals(){
     holder.style.displayTemplate='1fr 1fr 1fr 1fr';
     //create 5 children, give them text, id's, and links, and place them at the right places
     var child1 = document.createElement('a');
-    var childText1 = document.createTextNode('deals Mixing Powder!');
+    var childText1 = document.createTextNode('Refer-A-Friend');
     child1.setAttribute('id', 'Navdeals1');
     child1.setAttribute('href', 'deals/deals1.html');
     child1.setAttribute('class', 'black');
     child1.appendChild(childText1);
     holder.appendChild(child1);
     var child2 = document.createElement('a');
-    var childText2 = document.createTextNode('deals Ready-To-Drink!');
+    var childText2 = document.createTextNode('#SurrealChallenges!');
     child2.setAttribute('id', 'Navdeals2');
     child2.setAttribute('href', 'deals/deals2.html');
     child2.setAttribute('class', 'black');
     child2.appendChild(childText2);
     holder.appendChild(child2);
     var child3 = document.createElement('a');
-    var childText3 = document.createTextNode('deals Power Bars!');
+    var childText3 = document.createTextNode('Current Promotions!');
     child3.setAttribute('id', 'Navdeals3');
     child3.setAttribute('href', 'deals/deals3.html');
     child3.setAttribute('class', 'black');
     child3.appendChild(childText3);
     holder.appendChild(child3);
     var child4 = document.createElement('a');
-    var childText4 = document.createTextNode('Browse Our Other Products!');
+    var childText4 = document.createTextNode('Community Deals!');
     child4.setAttribute('id', 'Navdeals4');
     child4.setAttribute('href', 'deals/deals4.html');
     child4.setAttribute('class', 'black');
@@ -359,21 +359,21 @@ function forum(){
     holder.style.displayTemplate='1fr 1fr 1fr';
     //create 5 children, give them text, id's, and links, and place them at the right places
     var child1 = document.createElement('a');
-    var childText1 = document.createTextNode('forum Mixing Powder!');
+    var childText1 = document.createTextNode('Recipes and Articles for Flavor');
     child1.setAttribute('id', 'Navforum1');
     child1.setAttribute('href', 'forum/forum1.html');
     child1.setAttribute('class', 'black');
     child1.appendChild(childText1);
     holder.appendChild(child1);
     var child2 = document.createElement('a');
-    var childText2 = document.createTextNode('forum Ready-To-Drink!');
+    var childText2 = document.createTextNode('Community Forums');
     child2.setAttribute('id', 'Navforum2');
     child2.setAttribute('href', 'forum/forum2.html');
     child2.setAttribute('class', 'black');
     child2.appendChild(childText2);
     holder.appendChild(child2);
     var child3 = document.createElement('a');
-    var childText3 = document.createTextNode('forum Power Bars!');
+    var childText3 = document.createTextNode('Help Forums');
     child3.setAttribute('id', 'Navforum3');
     child3.setAttribute('href', 'forum/forum3.html');
     child3.setAttribute('class', 'black');
@@ -529,7 +529,7 @@ function cart(){
     holder.style.displayTemplate='1fr';
     //create 5 children, give them text, id's, and links, and place them at the right places
     var child1 = document.createElement('a');
-    var childText1 = document.createTextNode('cart Mixing Powder!');
+    var childText1 = document.createTextNode('My Cart');
     child1.setAttribute('id', 'Navcart1');
     child1.setAttribute('href', 'cart/cart1.html');
     child1.setAttribute('class', 'black');
