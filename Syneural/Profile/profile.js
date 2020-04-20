@@ -181,6 +181,13 @@ function blend() {
     div2.appendChild(blendbox2);
     div2.appendChild(blendboxlabel2);
     div.removeAttribute('onclick');
+    if (buttonbool == false) {
+        var button = document.createElement('input');
+        button.setAttribute('type', 'submit');
+        document.getElementById('form').appendChild(button);
+        document.getElementById('fix').innerText += '\n Click Submit once you are finished!';
+        buttonbool = true;
+    }
 }
 function blendQ() {
     var blendqbox = document.createElement('input');
@@ -233,4 +240,11 @@ function blendQ() {
     div2.appendChild(blendqbox4);
     div2.appendChild(blendqboxlabel4);
     div.removeAttribute('onclick');
+    if (buttonbool == false) {
+        var button = document.createElement('input');
+        button.setAttribute('type', 'submit');
+        document.getElementById('form').appendChild(button);
+        document.getElementById('fix').innerText += '\n Click Submit once you are finished!';
+        buttonbool = true;
+    }
 }

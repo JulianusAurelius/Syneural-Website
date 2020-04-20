@@ -1,9 +1,19 @@
 var imgbool = false;
+var sqlbool = false;
 function check() {
     if (imgbool == true) {
         var img = document.getElementById('img');
         img.parentNode.removeChild(img);
         imgbool = false;
+    }
+    else if (sqlbool == true) {
+        var sql = document.getElementById('sql');
+        var sql1 = document.getElementById('sql1');
+        var sql2 = document.getElementById('sql2');
+        sql.parentNode.removeChild(sql);
+        sql1.parentNode.removeChild(sql1);
+        sql2.parentNode.removeChild(sql2);
+        sqlbool = false;
     }
 }
 
@@ -32,6 +42,24 @@ function run3() {
     div.appendChild(img);
     div.style.height="750px";
     imgbool = true;
+}
+function run4() {
+    var sql = document.createElement('textarea');
+    sql.setAttribute('placeholder', 'ENTER SQL CODE HERE');
+    sql.setAttribute('cols', '30');
+    sql.setAttribute('rows', '10');
+    sql.setAttribute('id', 'sql');
+    var div = document.getElementById('div');
+    var sql1 = document.createElement('button');
+    sql1.innerText = "Execute WITHOUT Saving";
+    sql1.setAttribute('id', 'sql1');
+    var sql2 = document.createElement('button');
+    sql2.innerText = "Execute WITH Saving";
+    sql2.setAttribute('id', 'sql2');
+    div.appendChild(sql);
+    div.appendChild(sql1);
+    div.appendChild(sql2);
+    sqlbool = true;
 }
 
 
@@ -182,7 +210,6 @@ function maintain() {
     form1.setAttribute('value', 'Blend Name');
     form1.setAttribute('id', 'form1');
     form1text.setAttribute('for', 'form1');
-    form1text.setAttribute('id', 'form1t');
     form1text.innerText = " Blend Name\n\n";
 
     var form2 = document.createElement('input');
@@ -190,7 +217,7 @@ function maintain() {
     form2.setAttribute('type', 'number');
     form2.setAttribute('id', 'form2');
     form2text.setAttribute('for', 'form2');
-    form1text.setAttribute('id', 'form2t');
+    form2text.setAttribute('id', 'form2t');
     form2text.innerText = " Price\n\n";
 
     var form3 = document.createElement('button');
@@ -199,18 +226,24 @@ function maintain() {
     form3.setAttribute('id', 'form3');
     form3.setAttribute('height', '20px');
     form3text.setAttribute('for', 'form3');
-    form1text.setAttribute('id', 'form3t');
     form3text.innerText = " Ingredients and Quantities (CVS only) Upload Here\n\n";
-
-    var form4 = document.createElement('textarea');
+    
+    var form4 = document.createElement('button');
     var form4text = document.createElement('label');
-    form4.setAttribute('placeholder', 'Description');
+    form4.innerText = "Ingredients and Quantities (Current)";
     form4.setAttribute('id', 'form4');
-    form4.setAttribute('rows', '5');
-    form4.setAttribute('cols', '50');
+    form4.setAttribute('height', '20px');
     form4text.setAttribute('for', 'form4');
-    form1text.setAttribute('id', 'form4t');
-    form4text.innerText = " Blend Name\n";
+    form4text.innerText = " Download Current CVS Indredient and Quantities File\n\n";
+
+    var form5 = document.createElement('textarea');
+    var form5text = document.createElement('label');
+    form5.setAttribute('placeholder', 'Description');
+    form5.setAttribute('id', 'form5');
+    form5.setAttribute('rows', '5');
+    form5.setAttribute('cols', '50');
+    form5text.setAttribute('for', 'form5');
+    form5text.innerText = " Blend Name\n";
     
     var submit = document.createElement('input');
     submit.setAttribute('type', 'submit');
@@ -227,6 +260,8 @@ function maintain() {
     form.appendChild(form3text);
     form.appendChild(form4);
     form.appendChild(form4text);
+    form.appendChild(form5);
+    form.appendChild(form5text);
     form.appendChild(submit);
     var att = document.getElementById('button2');
     att.removeAttribute('onclick');
