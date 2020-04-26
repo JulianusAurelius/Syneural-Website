@@ -1,0 +1,91 @@
+body {
+    background-image: url(forest.jpg);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+#white {
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.733);
+    height: 100%;
+    width: 100%;
+    color: wheat;
+}
+
+tbody, thead, tr, th, td {
+    border: 1px solid black;
+    font-size: 30px;
+}
+th {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+table {
+    margin: auto;
+    background-image: url(forest.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+    border: 5px solid rgba(255, 166, 0, 0.541);
+    text-align: center;
+}
+tbody, thead {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: wheat;
+}
+.cool {
+    background-color: red;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.info {
+    font-size: 20px;
+}
+a {
+    background-color: white;
+    color: blue;
+}
+
+/* TEAM PAGE /////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////*/
+
+.team {
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 100px;
+    margin: 20px;
+}
+#staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.team1 {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+}
+.team1 .name {
+    text-align: right;
+}
+.team2 {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+}
+.team2 .info {
+    text-align: right;
+    background-color: violet;
+}
+.photo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 100px;
+    margin: auto;
+}

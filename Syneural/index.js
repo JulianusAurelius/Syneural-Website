@@ -567,7 +567,7 @@ function exit(){
         if1.parentNode.removeChild(if1);
         if2.parentNode.removeChild(if2);
         if3.parentNode.removeChild(if3);
-        if3.parentNode.removeChild(if3);
+        if4.parentNode.removeChild(if4);
         dealsbool = false;
     }
     else if (forumbool == true) {

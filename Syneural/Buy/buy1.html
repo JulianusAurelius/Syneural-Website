@@ -1,9 +1,138 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link type="text/css" rel="stylesheet" href="buy.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="buy.js"></script>
     </head>
     <body>
-        
+        <p><a href="../index.html">Return to Home Page</a></p>
+        <h1>Build your own Powder!</h1>
+        <div id="formdiv">
+            <div id="progress">
+                <!-- I Had to look up tutorials on how to make this HTML part for the circle-->
+                <div id="cont" data-pct="0">
+                    <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                      <circle id="progressb" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                      <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div id="infodiv">
+                <h3 class="h3">Try building your own mixture just for you!</h3><br>
+                <h3 class="h3">The progress bar over here will tell you how close you are to being<br>finished!</h3>
+            </div>
+            <form id="form">
+                <div id="hover">
+                    <img src="question.png" height="10px">
+                    <span id="hoverinfo">Regular is our regular blend. Hearty is for those who want to feel more full,
+                        in other words, it fills you up more but with the same amount of calories. Lean and Mean is our
+                        mixture for people who live an Xtreme lifestyle, high in protein with lots of other features
+                        that make it perfect for our Lean Mean Fighting Machines out there</span>
+                </div>
+                <div class="boxblocks">
+                    <input type="radio" id="radioreg" name="blendtype" value="regular" checked> 
+                    <label for="radioreg">Regular</label>
+                </div>
+                <div class="boxblocks">
+                    <input type="radio" id="radioheart" name="blendtype" value="heart"> 
+                    <label for="radioheart">Hearty</label>
+                </div>
+                <div class="boxblocks">
+                    <input type="radio" id="radiolean" name="blendtype" value="LearnandMean">
+                    <label for="radiolean">Lean and Mean</label>
+                </div>
+                <br>
+                <h2>What Flavor would you like?</h2>
+                <iframe src="buy1iframe.html" height="100px" width="90%"></iframe>
+                <br><br>
+                <div class="boxblocks">
+                    <input type="number" id="numquantity" value="Quantity" min="1" max="100" onclick="calc('quantity');">%
+                    <label for="numquantity">What percent of your daily meals will be Surreal on average? (Quantity per day as a percent)</label>
+                </div>
+                <br><br>
+                <div class="boxblocks" id="addback">
+                    <input type="number" id="numship" value="Shipping" min="1" max="10" step="1" onclick="calc('ship');">
+                    <label for="numship" id="numshiplabel">How often do you want to recieve shipments? (Frequency of Shipments)</label>
+                    <div id="noshipdiv">
+                        <input type="checkbox" id="noship" value="noship" name="noship" onclick="nosub1();">
+                        <label for="noship" id="noshiplabel">I'm not subscribing</label>
+                    </div>
+                </div>
+                <h2>Extra Flavor Packets (Out of 10 meals every 2 days)</h2>
+                <iframe src="buy1iframe2.html" height="100px" width="90%"></iframe>
+                <br><br>
+                <div class="boxblocks">
+                    <input type="radio" id="profileyes" value="Profile" name="profile" onclick="profileExit();">
+                    <label for="profileyes">I already have<br>a profile!</label>
+                </div>
+                <div class="boxblocks">
+                    <input type="radio" id="profileno" value="Profile" name="profile" checked>
+                    <label for="profileno">I do not have<br>a profile</label>
+                </div>
+                <div id="holder"><div id="noprofilediv">
+                    <h4>Let's Personalize this for you! Take 30 seconds and change your life?</h4>
+                    <div class="boxblocks">
+                        <input type="radio" name="cont" id="nocont" onclick="personal();">
+                        <label for="nocont">No</label>
+                    </div>
+                    <div class="boxblocks">
+                        <input type="radio" name="cont" id="yescont" checked>
+                        <label for="nocont">Yes</label>
+                    </div>
+                    <div id="noprofilediv2">
+                        <br><br>
+                        <div id="deleteme">
+                            <h5>What Gender we you biologically at birth?</h5>
+                            <div class="boxblocks1">
+                                <input type="radio" name="gender" id="male" onclick="calc(1);">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="boxblocks1">
+                                <input type="radio" name="gender" id="female" onclick="calc(1);">
+                                <label for="female">Female</label>
+                            </div><br><br><br>
+                            <h5>How strenous is your daily life? (Includes working out)</h5>
+                            <div class="boxblocks1">
+                                <input type="range" id="strenous" onclick="calc(2);">
+                                <label for="strenous">Left is relaxed, Right is extreme</label>
+                            </div><br><br><br><br>
+                            <div class="boxblocks1">
+                                <input type="number" id="weight" min="50" max="500" onclick="calc(3);">
+                                <label for="weight">What is your weight?</label>
+                            </div><br><br><br>
+                            <h5>Are you trying to lose weight, gain weight, or stay the same?</h5>
+                            <div class="boxblocks1">
+                                <input type="radio" id="gainweight" name="weight" onclick="calc(4);">
+                                <label for="gainweight">Gain Weight</label>
+                            </div>
+                            <div class="boxblocks1">
+                                <input type="radio" id="mainweight" name="weight" onclick="calc(4);">
+                                <label for="mainweight">Maintain Weight</label>
+                            </div>
+                            <div class="boxblocks1">
+                                <input type="radio" id="loseweight" name="weight" onclick="calc(4);">
+                                <label for="loseweight">Lose Weight</label>
+                            </div><br><br><br>
+                            <div class="boxblocks1">
+                                <input type="number" id="age" min="10" max="110" onclick="calc(5);">
+                                <label for="age">What is your age?</label>
+                            </div><br><br><br>
+                        </div>
+                        <textarea placeholder="Any allergies or dietary restrictions? If so, write them here. If not, leave this completely blank" cols="30" rows="5"></textarea>
+                    </div>
+                </div></div>
+                <h4 id="change">Would you like to subscribe for 10% off?</h4>
+                <div class="boxblocks">
+                    <input type="radio" id="yessub" name="subscribe">
+                    <label for="yessub" id="yessub1">No, not this<br>time, thank you</label>
+                </div>
+                <div class="boxblocks">
+                    <input type="radio" id="nosub" name="subscribe" checked>
+                    <label for="nosub" id="nosub1">Yes I want<br>to Subscribe!</label>
+                </div><br><br>
+                <button id="replace">Place Order</button>
+            </form>
+        </div>
     </body>
 </html>

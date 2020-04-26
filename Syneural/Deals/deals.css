@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+}
+#challengeholder {
+    background-color: rgb(93, 151, 93);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.challenge {
+    background-color: rgba(255, 255, 255, 0.336);
+    margin: 10px;
+    height: 350px;
+    transition-property: height, font-size;
+    transition-duration: 2s, 2s;
+    font-size: 16px;
+}
+.challenge div {
+    width: 50%;
+    margin: auto;
+    transition-property: margin-top, width;
+    transition-duration: 2s, 2s;
+    margin-top: 10px;
+}
+#challenge1:hover {
+    height: auto;
+    font-size: 32px;
+}
+#challenge1:hover div {
+    margin-top: 30px;
+    width: 100%;
+}
+#challenge2:hover {
+    height: auto;
+    font-size: 32px;
+}
+#challenge2:hover div {
+    margin-top: 30px;
+    width: 100%;
+}
+#challenge3:hover {
+    height: auto;
+    font-size: 32px;
+}
+#challenge3:hover div {
+    margin-top: 30px;
+    width: 100%;
+}
+#challenge4:hover {
+    height: auto;
+    font-size: 32px;
+}
+#challenge4:hover div {
+    margin-top: 30px;
+    width: 100%;
+}
+#challenge5:hover {
+    height: auto;
+    font-size: 32px;
+}
+#challenge5:hover div {
+    margin-top: 30px;
+    width: 100%;
+}
+#challenge6:hover {
+    height: auto;
+    font-size: 32px;
+}
+#challenge6:hover div {
+    margin-top: 30px;
+    width: 100%;
+}

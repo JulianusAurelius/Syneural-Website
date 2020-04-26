@@ -1,0 +1,158 @@
+function circle(el){
+    $(el).circleProgress({fill:{color: '#963484'}})
+    .on('circle-animation-progress'. function(event, progress, stepValue){
+        $(this).find('strong').text(String(stepValue.toFixed(2))+'%');
+    });
+};
+circle('.round');
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="buy.css">
+        <script src="buy.js"></script>
+    </head>
+    <body>
+        <h1 id='header'>Mixing Powder</h1>
+        <div id='div1' class='prodiv' onclick="div1();">Normal<p>Our Good 'Ol Classic. Try out our mix that you've
+            heard about, and see the results for yourself!</p></div>
+        <div id='div2' class='prodiv' onclick="div2();">Hearty<p>This mix has everything you need, plus a bit
+            of a buffer for calories, so if you want to feel full but still lose weight, you can fill up and
+            not worry about the calories!</p></div>
+        <div id='div3' class='prodiv' onclick="div3();">Lean and Mean<p>High in protein, designed for the best performance,
+            like nitro for the lean, mean, fighting machine you are</p></div>
+        <div id='div4' class='prodiv' onclick="div4();">Specialized<p>Can't have gluten? Allergic to a certain material?
+            Let us know and we can take care of that for you with this category specialized to your needs!</p></div>
+        <div id='info'>LORUM IPSUM SIT DOLOR AMET</div>
+    </body>
+</html>
+
+body {
+    background-color: #698F3F;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#header {
+    grid-column: 1/5;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.prodiv {
+    background-color: #9DDE78;
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    height: 150px;
+    border: #F9A620 15px solid;
+}
+.prodiv p {
+    font-size: 15px;
+}
+#info {
+    color: #D6FEFF;
+    grid-row: 4/5;
+}
+
+.divc {
+    margin: 15px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    height: 70px;
+    background-color: #D6FEFF;
+}
+
+function div1(input) {
+    if (input == "1") {
+        var del1 = document.getElementById('div1c');
+        var del2 = document.getElementById('div2c');
+        var del3 = document.getElementById('div3c');
+        var del4 = document.getElementById('div4c');
+        del1.parentNode.removeChild(del1);
+        del2.parentNode.removeChild(del2);
+        del3.parentNode.removeChild(del3);
+        del4.parentNode.removeChild(del4);
+    }
+    var div = document.createElement('div');
+    div.setAttribute('id', 'div1c');
+    div.setAttribute('class', 'divc');
+    div.innerText='Regular';
+    var div1 = document.createElement('div');
+    div1.setAttribute('id', 'div2c');
+    div1.setAttribute('class', 'divc');
+    div1.innerText='Vanilla';
+    var div2 = document.createElement('div');
+    div2.setAttribute('id', 'div3c');
+    div2.setAttribute('class', 'divc');
+    div2.innerText='Chocolate';
+    var div3 = document.createElement('div');
+    div3.setAttribute('id', 'div4c');
+    div3.setAttribute('class', 'divc');
+    div3.innerText='Explore other flavors';
+    var body = document.body;
+    body.appendChild(div);
+    body.appendChild(div1);
+    body.appendChild(div2);
+    body.appendChild(div3);
+    var normal = document.getElementById('div1');
+    normal.removeAttribute('onclick');
+    //expirementing with other ways to mark this as active, other than boolean values
+    var heart = document.getElementById('div2');
+    var lean = document.getElementById('div3');
+    var special = document.getElementById('div4');
+    heart.setAttribute('onclick', 'div2("1")');
+    lean.setAttribute('onclick', 'div3("1")');
+    special.setAttribute('onclick', 'div4("1")');
+}
+function div2(input) {
+    if (input == "1") {
+        var del1 = document.getElementById('div1c');
+        var del2 = document.getElementById('div2c');
+        var del3 = document.getElementById('div3c');
+        var del4 = document.getElementById('div4c');
+        del1.parentNode.removeChild(del1);
+        del2.parentNode.removeChild(del2);
+        del3.parentNode.removeChild(del3);
+        del4.parentNode.removeChild(del4);
+    }
+    var div = document.createElement('div');
+    div.setAttribute('id', 'div1c');
+    div.setAttribute('class', 'divc');
+    div.innerText='Regular';
+    var div1 = document.createElement('div');
+    div1.setAttribute('id', 'div2c');
+    div1.setAttribute('class', 'divc');
+    div1.innerText='Vanilla';
+    var div2 = document.createElement('div');
+    div2.setAttribute('id', 'div3c');
+    div2.setAttribute('class', 'divc');
+    div2.innerText='Chocolate';
+    var div3 = document.createElement('div');
+    div3.setAttribute('id', 'div4c');
+    div3.setAttribute('class', 'divc');
+    div3.innerText='Explore other flavors';
+    var body = document.body;
+    body.appendChild(div);
+    body.appendChild(div1);
+    body.appendChild(div2);
+    body.appendChild(div3);
+    var heart = document.getElementById('div2');
+    heart.removeAttribute('onclick');
+    //expirementing with other ways to mark this as active, other than boolean values
+    var normal = document.getElementById('div1');
+    var lean = document.getElementById('div3');
+    var special = document.getElementById('div4');
+    normal.setAttribute('onclick', 'div1("1")');
+    lean.setAttribute('onclick', 'div3("1")');
+    special.setAttribute('onclick', 'div4("1")');
+}
+function div3() {
+}
+function div4() {
+}

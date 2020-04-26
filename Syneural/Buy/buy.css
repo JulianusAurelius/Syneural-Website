@@ -1,0 +1,142 @@
+body {
+    /*background-color: rgb(44, 113, 134);*/
+    background-image: url(tree.jpg);
+    background-size: cover;
+    color: #F8FCDA;
+    text-align: right;
+}
+
+#formdiv {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+#progress {
+    background-color: #A1CDF1;
+    margin: 60px;
+    margin-top: 20px;
+    border: #F18F01 solid 10px;
+    border-bottom: none;
+    height: 100%;
+    position: fixed;
+}
+#infodiv {
+    padding-right: 40px;
+}
+.h3 {
+    background-color: rgba(0, 0, 0, 0.699);
+    display: inline;
+}
+a {
+    background-color: blanchedalmond;
+}
+form {
+    background-color: cyan;
+    color: black;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+    font-weight: lighter;
+    left: 70%;
+}
+h2 {
+    font-weight: lighter;
+}
+.boxblocks {
+    display: inline-block;
+    background-image: radial-gradient(rgb(28, 218, 218) .01%, cyan 99.99%);
+    margin-left: 25px;
+}
+.boxblocks label {
+    display: block;
+}
+#noshipdiv {
+    font-size: 10px;
+    text-align: right;
+}
+#rangeship {
+    background-color: chartreuse;
+}
+#deleteme {
+    margin-left: 60px;
+    background-color: rgba(0, 0, 0, 0.24);
+    background-image: none;
+}
+.boxblocks1 {
+    display: inline-block;
+    margin-left: 25px;
+}
+#hoverinfo {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    top: 130px;
+    right: 29.6%;
+    width: 350px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    transition: opacity 1s;
+}
+#hover:hover #hoverinfo {
+    visibility: visible;
+    opacity: 1;
+}
+#hover {
+    display: inline;
+}
+#hoverinfo::after {
+    content: " ";
+    position: absolute;
+    top: 8.4%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+
+
+
+
+
+/* CIRCLE STUFFS */
+
+#svg circle {
+    stroke-dashoffset: 566;
+    transition: stroke-dashoffset .5s linear;
+    stroke: #666;
+    stroke-width: 1em;
+}
+#svg #bar {
+    stroke: #F18F01;
+}
+#cont {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 2em auto;
+    box-shadow: 0 0 1em black;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+}
+#cont:after {
+    position: absolute;
+    display: block;
+    height: 160px;
+    width: 160px;
+    left: 50%;
+    top: 50%;
+    box-shadow: inset 0 0 .5em rgba(241, 145, 1, 0.288);
+    content: attr(data-pct)"%";
+    margin-top: -80px;
+    margin-left: -80px;
+    border-radius: 100%;
+    line-height: 160px;
+    font-size: 2em;
+    text-shadow: 0 0 0.5em black;
+}

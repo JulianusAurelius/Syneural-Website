@@ -116,7 +116,7 @@ function add() {
     form3.setAttribute('height', '20px');
     form3text.setAttribute('for', 'form3');
     form1text.setAttribute('id', 'form3t');
-    form3text.innerText = " Ingredients and Quantities (CVS only) Upload Here\n\n";
+    form3text.innerText = " Ingredients and Quantities (CSV only) Upload Here\n\n";
 
     var form4 = document.createElement('textarea');
     var form4text = document.createElement('label');
@@ -226,7 +226,7 @@ function maintain() {
     form3.setAttribute('id', 'form3');
     form3.setAttribute('height', '20px');
     form3text.setAttribute('for', 'form3');
-    form3text.innerText = " Ingredients and Quantities (CVS only) Upload Here\n\n";
+    form3text.innerText = " Ingredients and Quantities (CSV only) Upload Here\n\n";
     
     var form4 = document.createElement('button');
     var form4text = document.createElement('label');
@@ -234,7 +234,7 @@ function maintain() {
     form4.setAttribute('id', 'form4');
     form4.setAttribute('height', '20px');
     form4text.setAttribute('for', 'form4');
-    form4text.innerText = " Download Current CVS Indredient and Quantities File\n\n";
+    form4text.innerText = " Download Current CSV Indredient and Quantities File\n\n";
 
     var form5 = document.createElement('textarea');
     var form5text = document.createElement('label');
