@@ -162,7 +162,8 @@ Notes:
     a lot of time on the CSS to try and make it look great. All images used are free to use for business use. And
     I had to edit some of the photos as well to make them work for specific pages (see the Hiring page, photo is
     really cool). I feel I showed a high profiency in HTML, CSS, and JS from what you taught me and from what I
-    have learned in this semester.
+    have learned in this semester. I also have a high number of pages linked, and a high number of pages
+    developed.
     Overall, this project is probably well over 3,000 lines of code, and I wouldn't be suprised if I spent over
     80 hours, and in all honesty, with troubleshooting and everything, and thinking about how I want to design
     stuff, and writing up content that I want, 100 hours also seems like a good estitmate. I worked on this a lot
