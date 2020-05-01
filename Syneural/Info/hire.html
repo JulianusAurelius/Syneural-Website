@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="hire.css">
+        <script src="info.js"></script>
+    </head>
+    <body>
+        <p><a href="info3.html">Return to Team Page</a></p>
+        <h1>Our Hiring Page</h1>
+        <div id="div1">
+            <h2>Please Read Before Applying</h2>
+            <h3>Who Should Apply</h3>
+            <p>We have set out some general guidelines about who should apply</p>
+            <p>1. Someone who is looking for more than just a job. This is for people who want to make a 
+                difference</p>
+            <p>2. Someone who is willing to go above and beyond. I make this company my passion, and everday
+                I work hard and live a dream. Be willing to make this your passion, and love what you do, and do 
+                what you love</p>
+            <p>3. "That's not in the Job Description", a phrase I don't use. Our small company size requires 
+                that we go above our positions and titles. I may be Founder and CEO, but I do a bit of the cyber
+                requirements, a lot of financials, product testing, marketing, and just about everything else. I 
+                don't ask that people do as much as I do, but someone applying should be willing to do more than 
+                just their position when needed</p> <!--I DON'T WANNA MAKE THIS SOUND DICKISH AND SOUND
+                LIKE WE'LL MAKE YOU DO WHATEVER. HOW TO FIX?-->
+            <p>4. The exact level of education does not matter. It will help, but regardless, we will take all 
+                learning done seriously, whether it was just free online (Like Codecedemy) or at a University. 
+                Please only apply if you feel you could perform the general requirements of the job, but you do 
+                not have to possess 15 PhDs. No matter your level of education, whether or not you went to college, 
+                please apply. For example, Sales, you don't need years of experience and a degree. While both will 
+                help on their own, as long as you feel you are social enough and persistant enough, feel free to 
+                contact us.</p>
+            <p>5. It is preferred that you care about either health, food, being outdoors, or anything in the 
+                general nature of our product. Our team is not just passionate about our company, but our product 
+                itself. We love our product and no one adopts our products faster than us.</p>
+            <h3>Application Process and Timeline</h3>
+            <p>So the business will not be launched until 2024, so if you apply, please know you are being seriously 
+                considered for the team, and you should only apply if you are highly interested in this job, and 
+                still will be by 2024</p>
+            <p>2021 - We will start to go through applications and reach out to develop our team. At this point, 
+                only nutritionists, web developers, and a few other key positions will start work</p>
+            <p>2022 - As we start to prototype our product, all other positions will start work and start 
+                developing specific plans</p>
+            <p>2023 - All positions will hopefully be filled, our team will be hard at work preparing for our 
+                launch the next year</p>
+            <p>2024 - Launch! At this point everyone's doing their job and we're working hard!</p>
+            <h3>Benefits</h3>
+            <p>Please know all this information is preliminary, but we strive to compensate our employees as 
+                best we can</p>
+            <p>The exact salary will be determined as part of the secondary interviews, however, we have plenty 
+                of other benefits that we would love to include for our employees</p>
+            <p>1. Work from Home. Don't worry about gas, time on the road, or parking! Work from home! (Note: If 
+                you feel you are unable to work from home due to technology issues, please continue to apply, we 
+                might be able to work around that and work with you)</p>
+            <p>2. Surreal! We are a food company specializing in the healthiest food on the planet of the highest 
+                quality. Not only that, we love to take care of our employees! Put the two together and guess what! 
+                You get any of our products at pretty much free! Imagine having a few extra thousand in your pocket 
+                each year from not buying groceries!</p>
+            <p>3. Get a wide range of skills in business. If this isn't a bonus for you, then you probably won't 
+                enjoy working with us as much. You'll get to do a little bit of everything, even if you're in 
+                accounting you'll get to see a bit of sales and product development. Don't be stifled to doing 
+                the same thing over and over again mindlessly, day in day out.</p>
+            <p>4. We are also very personal, it's a family. Your ideas will actually be heard the moment you 
+                say them, instead of getting lost somewhere in the corporate ladder</p>
+            <p>5. We try to partner with health and fitness companies to try and get company discounts at 
+                specific places. While these will often change and many are in the works, we try to help our 
+                employees enjoy their towns and communities, and help them save a dime or two in doing so!</p>
+            <p>We have lots of other benefits, but in general, we just try to be a good company and good people</p>
+        </div>
+        <div id="div2">
+            <h2>Apply Here</h2>
+            <p>Please note that Resume, Cover Letters, and any other documents are not mandatory to have, 
+                however, a Resume at the least is highly recommended. If you have more documents than a 
+                Resume, a Cover Letter, and References, you can submit more files in a zip file with 'Other 
+                Files'</p>
+            <form action="mailto:MJayBeltz@gmail.com" method="POST" enctype="multipart/form-data" name="SurrealHire">
+                <div>
+                    <input type="text" size="50" id="name" name="name" required>
+                    <label for="name">Your name</label>
+                </div>
+                <div>
+                    <input type="text" size="50" id="position" name="position" required>
+                    <label for="position">Position you are applying for (or description of position)</label>
+                </div>
+                <div>
+                    <input type="email" size="50" id="email" name="email" required>
+                    <label for="email">Email we can contact you at</label>
+                </div>
+                <div>
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <label for="tel">Phone number we can contact you at. Please format like XXX-XXX-XXXX. This is not required</label>
+                </div>
+                <div>
+                    <input type="file" id="resume" name="resume">
+                    <label for="resume">Resume</label>
+                </div>
+                <div>
+                    <input type="file" id="cover" name="cover">
+                    <label for="cover">Cover letter</label>
+                </div>
+                <div>
+                    <input type="file" id="reference" name="reference">
+                    <label for="reference">References</label>
+                </div>
+                <div>
+                    <input type="file" id="otherfile" name="otherfile">
+                    <label for="otherfile">Other documents</label>
+                </div>
+                <div id="textarea">
+                    <textarea name="description" id="description" cols="60" rows="15"
+                    placeholder="Please tell us a little about yourself, such as why you're interested in this position. Feel free to talk about anything that helps to get to know you"></textarea>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
