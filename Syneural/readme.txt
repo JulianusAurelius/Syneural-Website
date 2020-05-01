@@ -5,7 +5,7 @@ I know this is long, but please do read. This gives a rundown of the entire site
 Index Page -
     The Homepage took me a lot of time. Easily 20 hours, if not 30. I had a lot of trouble with the navbar at the
     top. I had to rewrite many portions of my code entirely to get it to work the way I wanted. The same goes for
-    the horizontal sidebar. The noteable features of this page are:
+    the horizontal sidebar. The notable features of this page are:
         -Great Design. I spent a lot of time designing the page and making it look beautiful
         -Top Navbar. Hovering over each element at the top brings up further menus for each item, just like
             professional websites. I got the idea from Soylent.com and Huel.com, not to mention that a lot of other
@@ -18,7 +18,7 @@ Index Page -
             then choose the specific page they want to go to.
         -Each Div containing more information. I designed each div and styled them very creatively. Each div is
             related to a specific aspect (buy, info, deals, etc), with Cart being excluded (not out of
-            forgetfullness, rather I figured it wasn't a big enough aspect to have it directly on the webpage, so
+            forgetfulness, rather I figured it wasn't a big enough aspect to have it directly on the webpage, so
             I left it in the top napbar). Each div has a row for each specific webpage, and both the description
             text and the headers are both links to the same page. The bottom profile bar, (similar to a footer,
             I plan on putting an actual footer in later) is beautiful styled, and I think I did an amazing job with
@@ -31,7 +31,7 @@ Index Page -
 
 Buy1 (Powder Page) - 
     This site I developed recently, and was for sure a challenge. The code got complex fast, but I feel I did a
-    good job handling it. The noteable features of this page are:
+    good job handling it. The notable features of this page are:
         -Progress bar. The progress bar was very hard to do, and after a lot of looking online, I found a way to
             do it with pure CSS and JS. I have JQuery linked on this page because I thought I might have to use it
             (however, I know no JQuery, and I was following what I understood in videos). In the end I settled on
@@ -42,7 +42,7 @@ Buy1 (Powder Page) -
             to program in, however, from a lot of testing and planning, my system can handle any combination of
             answering and unanswering that the user does. Only thing is, that without JQuery, my JS relies on the
             user clicking on the element, not actually entering information in
-            -Progress bar 100%. When the programm bar makes it to 100%, a message is displayed underneat it, and
+            -Progress bar 100%. When the progress bar makes it to 100%, a message is displayed underneath it, and
                 if you backtrack something (to reduce it from 100%), the message disappears.
         -Form styling. By using HTML divs, classes, id, and everything else (that I have used throughout the entire
             project anyways,) I have style the form to be very visually appealing. However, I can't alter the inputs
@@ -58,7 +58,7 @@ Buy1 (Powder Page) -
         -Return to Home. I have a button on pretty much every page that allows the user to navigate back to the
             main site
         -iframes. I wanted to have a horizontal bar that you can scroll but not move the page, so you can select
-            from a larger pool of options, and I went with iframes. It took a bit of work, and seperate CSS files,
+            from a larger pool of options, and I went with iframes. It took a bit of work, and separate CSS files,
             but I got iframes into the page and I feel they look very nice. 
 
 
@@ -79,14 +79,14 @@ Blend -
         -Delete. This button is the same as maintain in that it shows all current blends. You select one and press
             Delete Blend. When you press the button, the webpage prompts the user if they are sure they want to
             delete the blend
-    -Nav buttons. This page links to the other rest of the private pages, as well as the prototpe UI for login.
+    -Nav buttons. This page links to the other rest of the private pages, as well as the prototype UI for login.
 Report -
     The report page is similar to the blend page. On here, the idea is that popular commands would be put into
     buttons that once can easily click and see the data. Or, if you want a specialized report, you can enter in
     your own SQL command with the 'Enter SQL' button. (And from there, I'll put in another button that allows
-    the user to put in some kind of visualization libary to help visualize the data in a meaningful way).
+    the user to put in some kind of visualization library to help visualize the data in a meaningful way).
     Since there is no actual data or anything for the buttons to do as of right now, when you click them, they
-    display photos of graphs! Noteable features are the buttons deleting other buttons images and textareas so
+    display photos of graphs! notable features are the buttons deleting other buttons images and textareas so
     the screen doesn't fill up with many many reports, plus the clear info button
 Login -
     This was a prototype I put together to show a potential early-stage UI for the login for my CIS250 class, where
@@ -153,7 +153,7 @@ hire -
 Profile --
 Profile1 (General) && Profile2 (Finance) && Profile3 (Blend) -
     All the profile pages are more or less the same. I have a lot of work to do to make it more user friendly.
-    However, the noteable features here are that you can specifically choose any information you want to modify,
+    However, the notable features here are that you can specifically choose any information you want to modify,
     click on that, and JS will change it to the appropriate input type, and add a submit button.
 
 
